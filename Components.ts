@@ -1,105 +1,7 @@
 ﻿namespace VR {
 
-    //export class LogComponent extends Component {
-    //    constructor() {
-    //        super();
-    //        var me = this;
-    //        //me.ComponentConstructed = AFRAME.registerComponent('log', me.GetDefinition());
 
-    //    }
-
-    //    public ComponentInit(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        console.log(data);
-    //    }
-
-
-    //}
-    //export class LogDetailComponent extends Component {
-    //    constructor() {
-    //        super();
-    //        var me = this;
-    //    }
-
-    //    public ComponentInit(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public ComponentUpdate(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public ComponentTick(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public ComponentRemove(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public ComponentPause(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public ComponentPlay(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data = element.data;
-    //        me.LogProperties('element', element);
-    //        me.LogProperties('el', el);
-    //        me.LogProperties('schema', schema);
-    //        me.LogProperties('data', data);
-    //    }
-
-    //    public LogProperties(title: string, arg: Object) {
-    //        console.log('************ ' + title + ' ************');
-    //        for (var prop in arg) {
-    //            console.log(prop + '=' + arg[prop]);
-    //        }
-    //    }
-
-    //}
-
-    //********************* cursor-click **************************
+    //********************* create onclick event **************************
     export class CursorClickComponent extends VR.Base.Component {
         constructor() {
             super('onclick')
@@ -130,6 +32,7 @@
 
     }
 
+    //********************* create hover color change **************************
     export class HoverColorComponent extends VR.Base.Component {
         constructor() {
             super('hover-color');
@@ -163,21 +66,4 @@
             });
         }
     }
-
-    //export class HrefComponent extends Component {
-    //    constructor() {
-    //        super();
-    //        var me = this;
-    //    }
-
-    //    public ComponentInit(element: any): void {
-    //        var me = this;
-    //        var el = element.el;
-    //        var schema = element.schema;
-    //        var data: string = element.data;
-    //        element.addEventListener('click', (evt) => {
-    //            window.location.href = element.data;
-    //        });
-    //    }
-    //}
 }
